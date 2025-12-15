@@ -63,7 +63,7 @@ const Learning = () => {
         <section id="learning" className="learning">
             <div className="container">
                 <div className="section-header text-center scroll-reveal">
-                    <h2>Learning Center</h2>
+                    <h2 className="header-white-cool">Learning Center</h2>
                     <p className="section-subtitle">
                         Expand your skills with our comprehensive training programs
                     </p>

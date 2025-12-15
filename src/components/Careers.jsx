@@ -59,7 +59,7 @@ const Careers = () => {
         <section id="careers" className="careers">
             <div className="container">
                 <div className="section-header text-center scroll-reveal">
-                    <h2>Join Our Team</h2>
+                    <h2 className="header-white-cool">Join Our Team</h2>
                     <p className="section-subtitle">
                         Be part of a dynamic team shaping the future of technology in East Africa
                     </p>

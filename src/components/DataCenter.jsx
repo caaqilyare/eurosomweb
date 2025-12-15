@@ -6,7 +6,7 @@ const DataCenter = () => {
             <div className="container">
                 <div className="datacenter-content">
                     <div className="datacenter-text scroll-reveal">
-                        <h2>State-of-the-Art Data Center</h2>
+                        <h2 className="header-white-cool">State-of-the-Art Data Center</h2>
                         <p className="datacenter-description">
                             Our enterprise-grade data center infrastructure ensures maximum uptime,
                             security, and performance for your critical applications and data. Located

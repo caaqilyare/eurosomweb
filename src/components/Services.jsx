@@ -44,7 +44,7 @@ const Services = () => {
         <section id="services" className="services">
             <div className="container">
                 <div className="section-header text-center scroll-reveal">
-                    <h2>Our Services</h2>
+                    <h2 className="header-white-cool">Our Services</h2>
                     <p className="section-subtitle">
                         Comprehensive technology solutions tailored to your business needs
                     </p>

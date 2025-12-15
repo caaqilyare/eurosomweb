@@ -14,7 +14,7 @@ const Technology = () => {
         <section id="technology" className="technology">
             <div className="container">
                 <div className="section-header text-center scroll-reveal">
-                    <h2>Technology Stack</h2>
+                    <h2 className="header-white-cool">Technology Stack</h2>
                     <p className="section-subtitle">
                         We leverage cutting-edge technologies to build robust and scalable solutions
                     </p>

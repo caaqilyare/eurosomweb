@@ -241,7 +241,7 @@ section {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%);
+    background: linear-gradient(135deg, #4D7CC7 0%, #00C2FF 100%);
     /* Brighter Blue Gradient */
     color: white;
     box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
@@ -361,6 +361,13 @@ section {
     max-width: 600px;
     margin: var(--spacing-md) auto 0;
     line-height: 1.8;
+}
+
+.header-white-cool {
+    color: #FFFFFF !important;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
 }
 
 /* Responsive */

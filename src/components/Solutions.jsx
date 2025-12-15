@@ -47,7 +47,7 @@ const Solutions = () => {
         <section id="solutions" className="solutions">
             <div className="container">
                 <div className="section-header text-center scroll-reveal">
-                    <h2>Our Solutions</h2>
+                    <h2 className="header-white-cool">Our Solutions</h2>
                     <p className="section-subtitle">
                         Innovative solutions designed to drive your business forward
                     </p>

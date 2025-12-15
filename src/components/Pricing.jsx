@@ -134,7 +134,7 @@ const Pricing = () => {
         <section id="pricing" className="pricing">
             <div className="container">
                 <div className="section-header text-center scroll-reveal">
-                    <h2>Pricing Plans</h2>
+                    <h2 className="header-white-cool">Pricing Plans</h2>
                     <p className="section-subtitle">
                         Choose the perfect plan for your business needs
                     </p>
