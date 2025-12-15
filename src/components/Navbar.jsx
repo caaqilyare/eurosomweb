@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logo from '../assets/logo.png'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -37,7 +38,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="navbar-content">
                     <Link to="/" className="navbar-logo" onClick={() => setMobileMenuOpen(false)}>
-                        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="EUROSOM" className="logo-image" />
+                        <img src={logo} alt="EUROSOM" className="logo-image" />
                     </Link>
 
                     <div className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>

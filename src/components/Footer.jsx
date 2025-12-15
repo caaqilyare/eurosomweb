@@ -1,3 +1,4 @@
+import logo from '../assets/logo.png'
 import './Footer.css'
 
 const Footer = () => {
@@ -35,7 +36,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-brand">
-                        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="EUROSOM" className="footer-logo-image" />
+                        <img src={logo} alt="EUROSOM" className="footer-logo-image" />
                         <p className="footer-description">
                             Leading technology solutions provider in East Africa,
                             transforming businesses through innovation and cutting-edge technology.
