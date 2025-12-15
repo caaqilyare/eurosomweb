@@ -37,7 +37,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="navbar-content">
                     <Link to="/" className="navbar-logo" onClick={() => setMobileMenuOpen(false)}>
-                        <img src="/logo.png" alt="EUROSOM" className="logo-image" />
+                        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="EUROSOM" className="logo-image" />
                     </Link>
 
                     <div className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>
