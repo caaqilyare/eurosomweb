@@ -1,0 +1,172 @@
+.navbar {
+    position: absolute;
+    /* Changed from fixed to absolute ("stik ka fur") */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: var(--spacing-sm) 0;
+    transition: all var(--transition-normal);
+}
+
+.navbar.scrolled {
+    /* Cool Glass Effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    padding: var(--spacing-sm) 0;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 45px;
+    width: auto;
+    transition: transform var(--transition-normal);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar-logo:hover .logo-image {
+    transform: scale(1.05);
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 4px;
+    /* Reduced gap for compact nav */
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    /* Subtle container background */
+    padding: 4px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+/* Base Nav Link - Clean & Simple */
+.nav-link {
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+}
+
+/* Hover - Simple highlight */
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+/* Active - Clean blue pill */
+.nav-link.active {
+    background: white;
+    color: #0047AB;
+    font-weight: 600;
+}
+
+/* When scrolled */
+.navbar.scrolled .nav-link {
+    color: #0047AB;
+}
+
+.navbar.scrolled .nav-link:hover {
+    background: rgba(0, 71, 171, 0.1);
+}
+
+.navbar.scrolled .nav-link.active {
+    background: #0047AB;
+    color: white;
+}
+
+.mobile-menu-btn {
+    display: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+@media (max-width: 968px) {
+    .navbar-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 2rem;
+        gap: 1rem;
+        display: none;
+        backdrop-filter: blur(20px);
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        color: var(--text-primary);
+        /* Dark text in mobile menu */
+    }
+
+    .navbar.scrolled .nav-link,
+    .navbar:not(.scrolled) .nav-link {
+        color: var(--text-primary);
+    }
+
+    .nav-link.active {
+        background: var(--primary);
+        color: white;
+        box-shadow: 0 4px 15px rgba(0, 71, 171, 0.3);
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
